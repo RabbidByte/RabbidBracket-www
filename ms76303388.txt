@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "rabbidbracket.com",
+  "Id": "71141785-b4d9-415e-b5a2-b257c3bd6436"
+}

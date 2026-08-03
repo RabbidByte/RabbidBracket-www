@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tournament Modes &amp; Features — RabbidBracket</title>
+    <meta
+      name="description"
+      content="Single elimination, double elimination, round robin, modified and full round-robin into a knockout, and Dixie Darts — plus singles, doubles, and blind-draw entry."
+    />
+    <meta name="theme-color" content="#030710" />
+    <link rel="canonical" href="https://rabbidbracket.com/features.html" />
+
+    <link rel="icon" type="image/svg+xml" href="/assets/brand/rabbidbracket-mark.svg" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/brand/rabbidbracket-icon.png" />
+    <link rel="apple-touch-icon" href="/assets/brand/rabbidbracket-icon.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Tournament Modes &amp; Features — RabbidBracket" />
+    <meta
+      property="og:description"
+      content="Six formats, three entry types, and everything that runs between the first dart and the payout."
+    />
+    <meta property="og:image" content="/assets/brand/rabbidbracket-icon.png" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/jetbrains-mono-latin-700-normal.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin-400-normal.woff2" crossorigin />
+    <link rel="stylesheet" href="/assets/css/brand.tokens.css" />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+    <script src="/assets/js/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="rb-logo" href="/" aria-label="RabbidBracket — home">
+          <img class="rb-logo-icon" src="/assets/brand/rabbidbracket-mark.svg" alt="" aria-hidden="true" />
+          <span class="rb-logo-text">
+            <span class="rb-logo-name"><span class="rb-mark-a">Rabbid</span><span class="rb-mark-b">Bracket</span></span>
+            <span class="rb-logo-tagline">Your Tournament Facilitator</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">
+          <span class="nav-toggle-bars"></span>
+        </button>
+
+        <nav class="nav" id="site-nav" aria-label="Main">
+          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="/features.html" aria-current="page">Features</a>
+          <a class="nav-link" href="/contact.html">Contact</a>
+          <a class="btn btn--primary nav-cta" href="/contact.html">Request a demo</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="wrap">
+          <span class="eyebrow">Features</span>
+          <h1>Pick the format.<br /><span class="grad-text">We'll run it.</span></h1>
+          <p class="lede">
+            Six tournament formats and three ways to enter a field — mix and match them freely. Every format has been
+            driven end to end to a champion, including the awkward cases: byes, a single board, multi-way ties, and a
+            double forfeit for third.
+          </p>
+        </div>
+      </section>
+
+      <!-- ── Tournament modes ── -->
+      <section class="section" id="modes">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow">Tournament modes</span>
+            <h2>Six formats, one facilitator screen</h2>
+            <p class="lede">
+              The format decides the shape of the tournament. Whichever you choose, scheduling, scoring, corrections,
+              payouts, and exports all work the same way.
+            </p>
+          </div>
+
+          <div class="mode-grid">
+            <article class="mode">
+              <div class="mode-head">
+                <h3 class="mode-name">Single Elimination</h3>
+                <span class="tag tag--accent">Fastest</span>
+              </div>
+              <p>
+                Lose once and you're out. The quickest way to get a big field down to a champion, and the natural
+                choice when you're tight on boards or on time.
+              </p>
+              <ul class="mode-facts">
+                <li>Random seeding, byes awarded to the top seeds</li>
+                <li>Byes advance automatically — no dead boards</li>
+                <li>Optional third-place playoff for the bronze spot</li>
+                <li>Every match is a best-of an odd number of legs, so it can't tie</li>
+              </ul>
+            </article>
+
+            <article class="mode">
+              <div class="mode-head">
+                <h3 class="mode-name">Double Elimination</h3>
+                <span class="tag tag--accent">Second chance</span>
+              </div>
+              <p>
+                Winners' and losers' brackets, with a grand final that can be reset. One bad leg early doesn't end
+                a player's tournament — they drop to the losers' side and fight back.
+              </p>
+              <ul class="mode-facts">
+                <li>If the losers' champion wins the grand final, the bracket resets for a decider</li>
+                <li>Drop order is arranged to avoid an immediate rematch after a loss</li>
+                <li>Fields from 8 to 128, padded to the bracket size automatically</li>
+              </ul>
+            </article>
+
+            <article class="mode">
+              <div class="mode-head">
+                <h3 class="mode-name">Round Robin</h3>
+                <span class="tag tag--win">Most darts thrown</span>
+              </div>
+              <p>
+                Everyone plays everyone. The fairest read on a field, and the format where nobody drives home after
+                two matches.
+              </p>
+              <ul class="mode-facts">
+                <li>Standings by leg points — one point per leg won</li>
+                <li>Best-of or play-all-legs, your call</li>
+                <li>Ties that decide a paying or podium spot go to a 9-dart shootout</li>
+                <li>Only <em>consequential</em> ties are played off — nothing else is held up</li>
+              </ul>
+            </article>
+
+            <article class="mode">
+              <div class="mode-head">
+                <h3 class="mode-name">Modified RR → Single KO</h3>
+                <span class="tag tag--accent">Group stage</span>
+              </div>
+              <p>
+                Split the field into groups, play a round robin inside each, then send the qualifiers to a
+                single-elimination bracket. Guaranteed games for everyone, plus a knockout finish.
+              </p>
+              <ul class="mode-facts">
+                <li>Group count and each group's size are yours to set — or take the recommendation</li>
+                <li>Groups display as Group A, Group B, … on every screen and sheet</li>
+                <li>Knockout seeding is cross-group, so group rivals don't meet again early</li>
+                <li>Ranked players are snake-distributed to keep the strong ones apart</li>
+              </ul>
+            </article>
+
+            <article class="mode">
+              <div class="mode-head">
+                <h3 class="mode-name">Modified RR → Double KO</h3>
+                <span class="tag tag--accent">Group stage</span>
+              </div>
+              <p>
+                The same group stage, feeding a double-elimination bracket instead. The longest and most forgiving
+                format — best for a marquee event with the boards to support it.
+              </p>
+              <ul class="mode-facts">
+                <li>Qualifiers seed into winners' and losers' brackets with a grand final</li>
+                <li>Bracket is padded to a power of two, with byes resolved automatically</li>
+                <li>Group ties that decide who advances are settled by shootout first</li>
+              </ul>
+            </article>
+
+            <article class="mode">
+              <div class="mode-head">
+                <h3 class="mode-name">Full RR → Knockout</h3>
+                <span class="tag tag--dim">Preset</span>
+              </div>
+              <p>
+                One group containing the whole field — everyone plays everyone — and then the top finishers go
+                straight into a single- or double-elimination bracket. Available as a one-click preset.
+              </p>
+              <ul class="mode-facts">
+                <li>Every player is guaranteed a game against every other</li>
+                <li>Choose a single- or double-elimination finish</li>
+                <li>Seeding into the knockout is derived from the round-robin standings</li>
+              </ul>
+            </article>
+
+            <article class="mode">
+              <div class="mode-head">
+                <h3 class="mode-name">Dixie Darts</h3>
+                <span class="tag tag--win">No bracket</span>
+              </div>
+              <p>
+                A round-based mixed-doubles points game. Every round the whole field is reshuffled into fresh teams,
+                so nobody is stuck with one partner — and points follow the player, not the team.
+              </p>
+              <ul class="mode-facts">
+                <li>The winning team's double-hitter scores 2 points, their partner 1; losers score 0</li>
+                <li>Points accumulate per player across every round</li>
+                <li>Play another round, take a break, or finish — you decide after each one</li>
+                <li>Ghost fillers pad an odd field, and are excluded from prize money</li>
+                <li>Ties for a paying position are played off before the event closes</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Entry types ── -->
+      <section class="section section--tint" id="entry">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow">Entry types</span>
+            <h2>How the field gets into the draw</h2>
+            <p class="lede">
+              Entry type is chosen separately from the format, so a doubles tournament can run any bracket you like. Teams
+              play exactly like individuals once the tournament launches.
+            </p>
+          </div>
+
+          <div class="grid grid--2">
+            <article class="card">
+              <h3>Singles</h3>
+              <p>One player per slot. Type the names, and the draw does the rest.</p>
+            </article>
+
+            <article class="card">
+              <h3>Doubles</h3>
+              <p>
+                You pair the players into teams. Names render as "B. Smith &amp; J. Doe", and if two players share a
+                surname the first-name prefix extends until every label is unmistakable.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>Blind Draw</h3>
+              <p>
+                Enter individuals and let RabbidBracket pair them at random — never putting two ranked players
+                together. An odd field gets an optional Ghost partner so nobody sits out.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>Dixie</h3>
+              <p>
+                Its own entry flow for the Dixie Darts format, with teams redrawn every round and ghost fillers
+                keeping the field a multiple of four.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Running an event ── -->
+      <section class="section" id="running">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow">Running an event</span>
+            <h2>The tournament, end to end</h2>
+          </div>
+
+          <div class="rows">
+            <div class="row">
+              <div class="row-key">Setup wizard</div>
+              <div class="row-val">
+                Entry type and format, players, boards, entry fee and house cut, payouts, then a full review before
+                launch. <strong>Nothing is locked in until you say go</strong> — and you're warned when it is.
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-key">Board scheduling</div>
+              <div class="row-val">
+                Matches are pushed to boards as they free up, in phase order, and a player is
+                <strong>never double-booked</strong>. Placement matches and shootouts are scheduled like any other
+                match. Need a breather between rounds? Hold the next round.
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-key">Scoring</div>
+              <div class="row-val">
+                Tap the board, record who won each leg. Winners advance, standings recompute, and the board is
+                released for the next match — all in one action. The only numeric entry is the
+                <strong>9-dart shootout</strong> used to break consequential ties.
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-key">Mass score entry</div>
+              <div class="row-val">
+                For group stages run on paper: one grid that mirrors the printed sheet, with live per-group totals and
+                places as you type. Nothing is written until you submit, so <strong>cancel is always safe</strong>.
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-key">Corrections &amp; withdrawals</div>
+              <div class="row-val">
+                Edit a submitted result and the knockout <strong>cascade-resets</strong> only the matches downstream
+                of it, with a confirmation first. Round-robin edits recompute standings. A player who leaves early has
+                their remaining games removed or conceded as walkovers.
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-key">Payouts</div>
+              <div class="row-val">
+                Pool = entry fee × players, less a dollar or percentage house cut. Pay places by
+                <strong>number of entries</strong> or by <strong>dollar amount</strong> — one mode for the whole
+                event. The total must reconcile to the prize pool exactly, or it isn't accepted.
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-key">Big screen</div>
+              <div class="row-val">
+                A read-only display window for the venue TV, live over the whole event. Choose the view per screen:
+                <strong>boards, bracket, groups, roster, a scrolling view for big fields, or Dixie standings</strong>.
+                Cards resize to fit any board count, and fullscreen is one click.
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-key">Exports</div>
+              <div class="row-val">
+                A spreadsheet backup of the entire event, printable group sheets, and branded
+                <strong>PDF and PNG sheets</strong> — summary with champion, placements and prizes; round-robin
+                standings; and the knockout bracket. Themed to match your chosen scheme.
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-key">Appearance</div>
+              <div class="row-val">
+                Twelve colour themes, dark and light, switchable live and applied to the operator screen, the TV, and
+                the exported sheets. Add your own logo for the sheets your players take home.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="cta-band">
+      <div class="wrap">
+        <h2>Which format fits your tournament?</h2>
+        <p class="lede lede--center">
+          Tell us your field size, board count, and how long you've got. We'll tell you what we'd run.
+        </p>
+        <div class="btn-row">
+          <a class="btn btn--win btn--lg" href="/contact.html">Ask us</a>
+          <a class="btn btn--ghost btn--lg" href="/">Back to overview</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-top">
+          <div>
+            <a class="rb-logo" href="/" aria-label="RabbidBracket — home">
+              <img class="rb-logo-icon" src="/assets/brand/rabbidbracket-mark.svg" alt="" aria-hidden="true" />
+              <span class="rb-logo-text">
+                <span class="rb-logo-name"><span class="rb-mark-a">Rabbid</span><span class="rb-mark-b">Bracket</span></span>
+              </span>
+            </a>
+            <p class="footer-blurb">
+              Tournament software for steel-tip darts — brackets, boards, payouts, and the big screen, all from one
+              facilitator's seat.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h2>Site</h2>
+            <ul class="footer-links">
+              <li><a href="/">Home</a></li>
+              <li><a href="/features.html">Features</a></li>
+              <li><a href="/contact.html">Contact us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h2>Explore</h2>
+            <ul class="footer-links">
+              <li><a href="/features.html#modes">Tournament modes</a></li>
+              <li><a href="/features.html#entry">Entry types</a></li>
+              <li><a href="/features.html#running">Running an event</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-copy">&copy; <span id="year">2026</span> RabbidBracket</p>
+          <span class="rb-attribution">
+            <img class="rb-attribution-mark" src="/assets/brand/rabbidlabs-mark.svg" alt="" aria-hidden="true" />
+            <span class="rb-attribution-text">Powered by RabbidLabs</span>
+          </span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

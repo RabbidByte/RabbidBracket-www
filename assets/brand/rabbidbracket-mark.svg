@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 120" role="img" aria-label="RabbidBracket">
+  <!-- RabbidBracket "Match Point" mark: an open bracket funnelling to a champion point on the
+       right. Fixed left->right brand gradient (indigo -> blue -> teal). Transparent background;
+       stroke-only so it scales cleanly to a favicon. -->
+  <title>RabbidBracket</title>
+  <defs>
+    <linearGradient id="rb-mp-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5956f6" />
+      <stop offset="55%" stop-color="#3199e8" />
+      <stop offset="100%" stop-color="#24d29a" />
+    </linearGradient>
+  </defs>
+  <path
+    d="M 30 28 L 100 28 L 130 60 L 100 92 L 30 92"
+    fill="none"
+    stroke="url(#rb-mp-grad)"
+    stroke-width="16"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>

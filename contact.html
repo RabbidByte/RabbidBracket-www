@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us — RabbidBracket</title>
+    <meta
+      name="description"
+      content="Ask about RabbidBracket, request a demo for your venue or league, or tell us what your tournament needs."
+    />
+    <meta name="theme-color" content="#030710" />
+    <link rel="canonical" href="https://rabbidbracket.com/contact.html" />
+
+    <link rel="icon" type="image/svg+xml" href="/assets/brand/rabbidbracket-mark.svg" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/brand/rabbidbracket-icon.png" />
+    <link rel="apple-touch-icon" href="/assets/brand/rabbidbracket-icon.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contact Us — RabbidBracket" />
+    <meta property="og:description" content="Request a demo or ask us anything about running your tournament." />
+    <meta property="og:image" content="/assets/brand/rabbidbracket-icon.png" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/jetbrains-mono-latin-700-normal.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin-400-normal.woff2" crossorigin />
+    <link rel="stylesheet" href="/assets/css/brand.tokens.css" />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+    <script src="/assets/js/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="rb-logo" href="/" aria-label="RabbidBracket — home">
+          <img class="rb-logo-icon" src="/assets/brand/rabbidbracket-mark.svg" alt="" aria-hidden="true" />
+          <span class="rb-logo-text">
+            <span class="rb-logo-name"><span class="rb-mark-a">Rabbid</span><span class="rb-mark-b">Bracket</span></span>
+            <span class="rb-logo-tagline">Your Tournament Facilitator</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">
+          <span class="nav-toggle-bars"></span>
+        </button>
+
+        <nav class="nav" id="site-nav" aria-label="Main">
+          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="/features.html">Features</a>
+          <a class="nav-link" href="/contact.html" aria-current="page">Contact</a>
+          <a class="btn btn--primary nav-cta" href="/contact.html">Request a demo</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="wrap">
+          <span class="eyebrow">Contact us</span>
+          <h1>Tell us about <span class="grad-text">your tournament</span></h1>
+          <p class="lede">
+            Field size, board count, the format you run, the part that always goes wrong — whatever it is, we want to
+            hear it. Demos, questions, and feature requests all land in the same inbox.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap contact-grid">
+          <div class="form-card">
+            <h2 class="form-title">Send a message</h2>
+
+            <form id="contact-form" novalidate>
+              <div class="form-grid">
+                <div class="field">
+                  <label class="field-label" for="name">Name <span class="req" aria-hidden="true">*</span></label>
+                  <input class="input" type="text" id="name" name="name" autocomplete="name" required />
+                </div>
+
+                <div class="field">
+                  <label class="field-label" for="email">Email <span class="req" aria-hidden="true">*</span></label>
+                  <input class="input" type="email" id="email" name="email" autocomplete="email" required />
+                </div>
+
+                <div class="field">
+                  <label class="field-label" for="venue">Venue or league</label>
+                  <input class="input" type="text" id="venue" name="venue" autocomplete="organization" />
+                </div>
+
+                <div class="field">
+                  <label class="field-label" for="topic">What's this about?</label>
+                  <select class="select" id="topic" name="topic">
+                    <option>Request a demo</option>
+                    <option>Question about a format</option>
+                    <option>Pricing &amp; availability</option>
+                    <option>Feature request</option>
+                    <option>Something else</option>
+                  </select>
+                </div>
+
+                <div class="field field--full">
+                  <label class="field-label" for="message">Message <span class="req" aria-hidden="true">*</span></label>
+                  <textarea class="textarea" id="message" name="message" required></textarea>
+                  <span class="field-hint">
+                    Field size, number of boards, and how long you have for the event are the most useful things to
+                    include.
+                  </span>
+                </div>
+
+                <!-- Honeypot: hidden from people, catnip for bots. -->
+                <div class="hp" aria-hidden="true">
+                  <label for="website">Leave this field empty</label>
+                  <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+                </div>
+              </div>
+
+              <div class="btn-row btn-row--tight">
+                <button class="btn btn--primary btn--lg" type="submit">Send message</button>
+              </div>
+
+              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <aside>
+            <div class="aside-card">
+              <h2 class="aside-label">
+                Email us directly
+              </h2>
+              <a class="contact-link" href="mailto:hello@rabbidbracket.com">hello@rabbidbracket.com</a>
+              <p>We read everything and usually reply within a couple of days.</p>
+            </div>
+
+            <div class="aside-card">
+              <h2 class="aside-label">
+                Good to know
+              </h2>
+              <p>
+                RabbidBracket runs the whole event from one facilitator's screen, with a read-only display for the
+                venue TV. It suits league tournaments, charity shoots, and weekend opens alike.
+              </p>
+              <p>
+                Not sure which format fits? Send us your numbers and we'll recommend one —
+                <a href="/features.html#modes">or browse the modes first</a>.
+              </p>
+            </div>
+
+            <div class="aside-card">
+              <h2 class="aside-label">
+                From RabbidLabs
+              </h2>
+              <p>
+                RabbidBracket is a RabbidLabs product. Every exported sheet and every screen carries the same
+                co-brand you see at the bottom of this page.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-top">
+          <div>
+            <a class="rb-logo" href="/" aria-label="RabbidBracket — home">
+              <img class="rb-logo-icon" src="/assets/brand/rabbidbracket-mark.svg" alt="" aria-hidden="true" />
+              <span class="rb-logo-text">
+                <span class="rb-logo-name"><span class="rb-mark-a">Rabbid</span><span class="rb-mark-b">Bracket</span></span>
+              </span>
+            </a>
+            <p class="footer-blurb">
+              Tournament software for steel-tip darts — brackets, boards, payouts, and the big screen, all from one
+              facilitator's seat.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h2>Site</h2>
+            <ul class="footer-links">
+              <li><a href="/">Home</a></li>
+              <li><a href="/features.html">Features</a></li>
+              <li><a href="/contact.html">Contact us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h2>Explore</h2>
+            <ul class="footer-links">
+              <li><a href="/features.html#modes">Tournament modes</a></li>
+              <li><a href="/features.html#entry">Entry types</a></li>
+              <li><a href="/features.html#running">Running an event</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-copy">&copy; <span id="year">2026</span> RabbidBracket</p>
+          <span class="rb-attribution">
+            <img class="rb-attribution-mark" src="/assets/brand/rabbidlabs-mark.svg" alt="" aria-hidden="true" />
+            <span class="rb-attribution-text">Powered by RabbidLabs</span>
+          </span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

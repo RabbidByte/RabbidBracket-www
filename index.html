@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RabbidBracket — Your Tournament Facilitator</title>
+    <meta
+      name="description"
+      content="RabbidBracket runs steel-tip dart tournaments at your venue: six formats, three entry types, live board scheduling, exact payouts, a big-screen TV view, and branded result sheets."
+    />
+    <meta name="theme-color" content="#030710" />
+    <link rel="canonical" href="https://rabbidbracket.com/" />
+
+    <link rel="icon" type="image/svg+xml" href="/assets/brand/rabbidbracket-mark.svg" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/brand/rabbidbracket-icon.png" />
+    <link rel="apple-touch-icon" href="/assets/brand/rabbidbracket-icon.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="RabbidBracket — Your Tournament Facilitator" />
+    <meta
+      property="og:description"
+      content="Configure the format, enter players, auto-generate the bracket, run every board, pay it out — and put a live results screen on the venue TV."
+    />
+    <meta property="og:image" content="/assets/brand/rabbidbracket-icon.png" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/jetbrains-mono-latin-700-normal.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin-400-normal.woff2" crossorigin />
+    <link rel="stylesheet" href="/assets/css/brand.tokens.css" />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+    <script src="/assets/js/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="rb-logo" href="/" aria-label="RabbidBracket — home">
+          <img class="rb-logo-icon" src="/assets/brand/rabbidbracket-mark.svg" alt="" aria-hidden="true" />
+          <span class="rb-logo-text">
+            <span class="rb-logo-name"><span class="rb-mark-a">Rabbid</span><span class="rb-mark-b">Bracket</span></span>
+            <span class="rb-logo-tagline">Your Tournament Facilitator</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">
+          <span class="nav-toggle-bars"></span>
+        </button>
+
+        <nav class="nav" id="site-nav" aria-label="Main">
+          <a class="nav-link" href="/" aria-current="page">Home</a>
+          <a class="nav-link" href="/features.html">Features</a>
+          <a class="nav-link" href="/contact.html">Contact</a>
+          <a class="btn btn--primary nav-cta" href="/contact.html">Request a demo</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ── Hero ── -->
+      <section class="hero">
+        <div class="wrap hero-grid">
+          <div>
+            <p class="hero-badge">Built for steel-tip darts</p>
+            <h1>Run the tournament.<br /><span class="grad-text">Not the paperwork.</span></h1>
+            <p class="hero-sub">
+              RabbidBracket is the tournament facilitator for venues, leagues, and charity shoots. Configure the
+              format, enter the players, and it handles the draw, the boards, the standings, the payouts, and the
+              big screen — start to champion.
+            </p>
+            <div class="btn-row">
+              <a class="btn btn--primary btn--lg" href="/features.html">See the tournament modes</a>
+              <a class="btn btn--ghost btn--lg" href="/contact.html">Talk to us</a>
+            </div>
+            <p class="hero-note">Six formats · Three entry types · Live TV display · One-click exports</p>
+          </div>
+
+          <!-- Miniature of the operator screen: boards + up-next queue. -->
+          <div class="mock" role="img" aria-label="The RabbidBracket operator screen showing live boards and the up-next queue">
+            <div class="mock-bar">
+              <span class="mock-dot mock-dot--live"></span>
+              <span class="mock-dot"></span>
+              <span class="mock-dot"></span>
+              <span class="mock-title">Thursday Open · Running</span>
+            </div>
+            <div class="mock-body">
+              <p class="mock-label">Boards</p>
+              <div class="mock-boards">
+                <div class="mock-board mock-board--live">
+                  <span class="mock-board-num">Board 1</span>
+                  <span class="mock-player"><span>M. Alvarez</span><span class="mock-score">2</span></span>
+                  <span class="mock-vs">vs</span>
+                  <span class="mock-player"><span>T. Brennan</span><span class="mock-score">1</span></span>
+                </div>
+                <div class="mock-board mock-board--live">
+                  <span class="mock-board-num">Board 2</span>
+                  <span class="mock-player"><span>K. Osei</span><span class="mock-score mock-score--win">3</span></span>
+                  <span class="mock-vs">vs</span>
+                  <span class="mock-player"><span>D. Whitfield</span><span class="mock-score">0</span></span>
+                </div>
+                <div class="mock-board">
+                  <span class="mock-board-num">Board 3</span>
+                  <span class="mock-free">Free</span>
+                </div>
+              </div>
+
+              <p class="mock-label">Up next</p>
+              <div class="mock-queue">
+                <div class="mock-queue-row">
+                  <span class="mock-queue-pos">01</span>
+                  <span class="mock-queue-names">R. Nakamura vs S. Doyle</span>
+                  <span class="mock-queue-phase">QF</span>
+                </div>
+                <div class="mock-queue-row">
+                  <span class="mock-queue-pos">02</span>
+                  <span class="mock-queue-names">J. Okafor vs L. Petrov</span>
+                  <span class="mock-queue-phase">QF</span>
+                </div>
+                <div class="mock-queue-row">
+                  <span class="mock-queue-pos">03</span>
+                  <span class="mock-queue-names">Winner B1 vs Winner B2</span>
+                  <span class="mock-queue-phase">SF</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Stats ── -->
+      <section class="section section--flush">
+        <div class="wrap">
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-num">6</div>
+              <div class="stat-label">Tournament formats</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">3</div>
+              <div class="stat-label">Entry types</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">12</div>
+              <div class="stat-label">Colour themes</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">6</div>
+              <div class="stat-label">Big-screen views</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── What it does ── -->
+      <section class="section" id="what">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow">What it does</span>
+            <h2>Everything the scorekeeper's clipboard used to do</h2>
+            <p class="lede">
+              One facilitator drives the whole event from a single screen. RabbidBracket keeps the draw honest, the
+              boards busy, and the money exact.
+            </p>
+          </div>
+
+          <div class="grid grid--3">
+            <article class="card">
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 5h6l3 4-3 4H3M9 19h6l3-4" /><path d="M18 9h3M18 15h3" />
+                </svg>
+              </span>
+              <h3>Automatic brackets</h3>
+              <p>
+                Pick a format and the draw generates itself — random seeding, byes to the top seeds, and no early
+                rematches between players from the same group.
+              </p>
+            </article>
+
+            <article class="card">
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9" /><circle cx="12" cy="12" r="4" /><circle cx="12" cy="12" r="1" fill="currentColor" />
+                </svg>
+              </span>
+              <h3>Live board scheduling</h3>
+              <p>
+                Matches are assigned to boards as they free up, and a player is never double-booked. Playoffs and
+                shootouts queue like any other match.
+              </p>
+            </article>
+
+            <article class="card">
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v20" /><path d="M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                </svg>
+              </span>
+              <h3>Payouts that reconcile</h3>
+              <p>
+                Set the entry fee and house cut, then pay places by number of entries or by dollar amount. The
+                configuration has to balance to the prize pool exactly, to the cent.
+              </p>
+            </article>
+
+            <article class="card">
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" /><path d="M8 21h8M12 17v4" />
+                </svg>
+              </span>
+              <h3>Big-screen results</h3>
+              <p>
+                Open a read-only display window on the venue TV — boards, bracket, groups, roster, or a scrolling
+                view — and it updates live as scores land.
+              </p>
+            </article>
+
+            <article class="card">
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 3v5h5" /><path d="M19 8v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7z" />
+                  <path d="M9 13h6M9 17h4" />
+                </svg>
+              </span>
+              <h3>Exports worth sharing</h3>
+              <p>
+                Download a spreadsheet backup of the whole event, plus branded PDF and PNG sheets of the summary,
+                standings, and bracket — ready to post the moment the tournament ends.
+              </p>
+            </article>
+
+            <article class="card">
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 12a9 9 0 1 0 9-9" /><path d="M3 4v5h5" /><path d="M12 8v4l3 2" />
+                </svg>
+              </span>
+              <h3>Fix it without fear</h3>
+              <p>
+                Wrong score submitted? Correct it. Knockout edits cascade-reset the affected matches, round-robin
+                edits recompute standings, and withdrawals resolve cleanly.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── How it works ── -->
+      <section class="section section--tint" id="how">
+        <div class="wrap">
+          <div class="section-head section-head--center">
+            <span class="eyebrow">How it works</span>
+            <h2>Set up in minutes, run the whole tournament</h2>
+          </div>
+
+          <div class="grid grid--3">
+            <article class="card step">
+              <span class="step-num" aria-hidden="true">01</span>
+              <h3>Configure</h3>
+              <p>
+                A guided setup walks through entry type and format, players, boards, entry fee, and payouts — then
+                shows you the whole thing for review before anything is locked in.
+              </p>
+            </article>
+
+            <article class="card step">
+              <span class="step-num" aria-hidden="true">02</span>
+              <h3>Run</h3>
+              <p>
+                Launch, and matches start landing on boards. Tap a board to record who won each leg; winners advance,
+                standings recompute, and the next match takes the board.
+              </p>
+            </article>
+
+            <article class="card step">
+              <span class="step-num" aria-hidden="true">03</span>
+              <h3>Pay out &amp; publish</h3>
+              <p>
+                Ties for paying positions are played off, never split. When the champion is decided, the prize table
+                is already calculated and the export buttons are waiting.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Details ── -->
+      <section class="section" id="details">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow">Under the hood</span>
+            <h2>Details that matter late in a busy tournament</h2>
+          </div>
+
+          <div class="rows">
+            <div class="row">
+              <div class="row-key">Fair by default</div>
+              <div class="row-val">
+                Seeding is random, byes go to the top seeds, and ranked players are kept apart in group draws and
+                blind-draw pairings. <strong>Ties that decide a paying position are played off</strong> — prize money
+                is never split.
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-key">Paper-friendly</div>
+              <div class="row-val">
+                Ran the group stage on printed sheets? <strong>Mass score entry</strong> gives you a single grid that
+                mirrors the paper sheet — type the whole stage in, review the totals, and submit once.
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-key">Made for the venue</div>
+              <div class="row-val">
+                Scoring is <strong>outcome-based</strong> — record who won each leg, not every dart. Boards are
+                assigned automatically, and the display window is sized for the TV over the bar.
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-key">Yours to brand</div>
+              <div class="row-val">
+                Twelve colour themes ship in the box, from the default dark terminal look to high-contrast light
+                schemes. Add <strong>your own logo</strong> and it rides along on the exported sheets.
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-key">Nothing to lose</div>
+              <div class="row-val">
+                Every tournament is stored and resumable — a power blip or a closed browser tab doesn't cost you the
+                event. Finished tournaments stay in <strong>History</strong>.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ── CTA ── -->
+    <section class="cta-band">
+      <div class="wrap">
+        <h2>Bring it to your venue</h2>
+        <p class="lede lede--center">
+          Running a league tournament, a charity shoot, or a weekend open? Tell us about your event and we'll show you
+          RabbidBracket running it.
+        </p>
+        <div class="btn-row">
+          <a class="btn btn--win btn--lg" href="/contact.html">Request a demo</a>
+          <a class="btn btn--ghost btn--lg" href="/features.html">Browse the modes</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-top">
+          <div>
+            <a class="rb-logo" href="/" aria-label="RabbidBracket — home">
+              <img class="rb-logo-icon" src="/assets/brand/rabbidbracket-mark.svg" alt="" aria-hidden="true" />
+              <span class="rb-logo-text">
+                <span class="rb-logo-name"><span class="rb-mark-a">Rabbid</span><span class="rb-mark-b">Bracket</span></span>
+              </span>
+            </a>
+            <p class="footer-blurb">
+              Tournament software for steel-tip darts — brackets, boards, payouts, and the big screen, all from one
+              facilitator's seat.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h2>Site</h2>
+            <ul class="footer-links">
+              <li><a href="/">Home</a></li>
+              <li><a href="/features.html">Features</a></li>
+              <li><a href="/contact.html">Contact us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h2>Explore</h2>
+            <ul class="footer-links">
+              <li><a href="/features.html#modes">Tournament modes</a></li>
+              <li><a href="/features.html#entry">Entry types</a></li>
+              <li><a href="/features.html#running">Running an event</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-copy">&copy; <span id="year">2026</span> RabbidBracket</p>
+          <span class="rb-attribution">
+            <img class="rb-attribution-mark" src="/assets/brand/rabbidlabs-mark.svg" alt="" aria-hidden="true" />
+            <span class="rb-attribution-text">Powered by RabbidLabs</span>
+          </span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
