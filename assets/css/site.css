@@ -368,16 +368,20 @@ h3 {
   font-size: clamp(1.4rem, 3vw, 2rem);
 }
 
+/* The co-brand stays understated, but it is a link: 0.9 is the lowest opacity
+   that still clears WCAG AA (4.84:1) for the label against the footer. Dimming
+   the mark and the text together is what keeps it subordinate to the page. */
 .rb-attribution {
   display: inline-flex;
   align-items: center;
   gap: 0.5em;
-  opacity: 0.55;
+  opacity: 0.9;
   transition: opacity 0.15s;
 }
 
-.rb-attribution:hover {
-  opacity: 0.9;
+.rb-attribution:hover,
+.rb-attribution:focus-visible {
+  opacity: 1;
   text-decoration: none;
 }
 
