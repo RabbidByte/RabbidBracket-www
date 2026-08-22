@@ -12,10 +12,10 @@
     <!-- End Google Tag Manager -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>RabbidBracket — Your Tournament Facilitator</title>
+    <title>RabbidBracket — Steel-Tip Dart Tournament Software</title>
     <meta
       name="description"
-      content="RabbidBracket runs steel-tip dart tournaments at your venue: six formats, three entry types, live board scheduling, exact payouts, a big-screen TV view, and branded result sheets."
+      content="RabbidBracket runs steel-tip dart tournaments at your venue — six bracket formats, live board scheduling, exact payouts, and a big-screen TV view."
     />
     <meta name="theme-color" content="#030710" />
     <link rel="canonical" href="https://www.rabbidbracket.com/" />
@@ -25,19 +25,76 @@
     <link rel="apple-touch-icon" href="/assets/brand/rabbidbracket-icon.png" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="RabbidBracket — Your Tournament Facilitator" />
+    <meta property="og:url" content="https://www.rabbidbracket.com/" />
+    <meta property="og:site_name" content="RabbidBracket" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="RabbidBracket — Steel-Tip Dart Tournament Software" />
     <meta
       property="og:description"
       content="Configure the format, enter players, auto-generate the bracket, run every board, pay it out — and put a live results screen on the venue TV."
     />
-    <meta property="og:image" content="/assets/brand/rabbidbracket-icon.png" />
+    <meta property="og:image" content="https://www.rabbidbracket.com/assets/brand/rabbidbracket-icon.png" />
+    <meta property="og:image:secure_url" content="https://www.rabbidbracket.com/assets/brand/rabbidbracket-icon.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:image:alt" content="The RabbidBracket match-point mark" />
     <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="RabbidBracket — Steel-Tip Dart Tournament Software" />
+    <meta
+      name="twitter:description"
+      content="Configure the format, enter players, auto-generate the bracket, run every board, pay it out — and put a live results screen on the venue TV."
+    />
+    <meta name="twitter:image" content="https://www.rabbidbracket.com/assets/brand/rabbidbracket-icon.png" />
+    <meta name="twitter:image:alt" content="The RabbidBracket match-point mark" />
 
     <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/jetbrains-mono-latin-700-normal.woff2" crossorigin />
     <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin-400-normal.woff2" crossorigin />
     <link rel="stylesheet" href="/assets/css/brand.tokens.css" />
     <link rel="stylesheet" href="/assets/css/site.css" />
     <script src="/assets/js/site.js" defer></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.rabbidbracket.com/#organization",
+            "name": "RabbidLabs",
+            "url": "https://www.rabbidlabs.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.rabbidbracket.com/assets/brand/rabbidlabs-mark.svg"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.rabbidbracket.com/#website",
+            "name": "RabbidBracket",
+            "url": "https://www.rabbidbracket.com/",
+            "publisher": { "@id": "https://www.rabbidbracket.com/#organization" }
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://www.rabbidbracket.com/#software",
+            "name": "RabbidBracket",
+            "description": "RabbidBracket runs steel-tip dart tournaments at your venue — six bracket formats, live board scheduling, exact payouts, and a big-screen TV view.",
+            "url": "https://www.rabbidbracket.com/",
+            "applicationCategory": "SportsApplication",
+            "featureList": [
+              "Automatic brackets with random seeding and byes to the top seeds",
+              "Live board scheduling with no double-booked players",
+              "Payouts that reconcile exactly to the prize pool",
+              "Big-screen results display for the venue TV",
+              "Spreadsheet, PDF, and PNG exports of standings and brackets",
+              "Score corrections that cascade-reset affected matches"
+            ],
+            "publisher": { "@id": "https://www.rabbidbracket.com/#organization" }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -50,7 +107,7 @@
     <header class="site-header">
       <div class="wrap header-inner">
         <a class="rb-logo" href="/" aria-label="RabbidBracket — home">
-          <img class="rb-logo-icon" src="/assets/brand/rabbidbracket-mark.svg" alt="" aria-hidden="true" />
+          <img class="rb-logo-icon" src="/assets/brand/rabbidbracket-mark.svg" alt="" aria-hidden="true" width="160" height="120" />
           <span class="rb-logo-text">
             <span class="rb-logo-name"><span class="rb-mark-a">Rabbid</span><span class="rb-mark-b">Bracket</span></span>
             <span class="rb-logo-tagline">Your Tournament Facilitator</span>
@@ -86,7 +143,10 @@
               <a class="btn btn--primary btn--lg" href="/features.html">See the tournament modes</a>
               <a class="btn btn--ghost btn--lg" href="/contact.html">Talk to us</a>
             </div>
-            <p class="hero-note">Six formats · Three entry types · Live TV display · One-click exports</p>
+            <p class="hero-note">
+              <a href="/features.html#modes">Six formats</a> · <a href="/features.html#entry">Three entry types</a> ·
+              Live TV display · One-click exports
+            </p>
           </div>
 
           <!-- Miniature of the operator screen: boards + up-next queue. -->
@@ -186,8 +246,8 @@
               </span>
               <h3>Automatic brackets</h3>
               <p>
-                Pick a format and the draw generates itself — random seeding, byes to the top seeds, and no early
-                rematches between players from the same group.
+                Pick a <a href="/features.html#modes">format</a> and the draw generates itself — random seeding, byes
+                to the top seeds, and no early rematches between players from the same group.
               </p>
             </article>
 
@@ -225,8 +285,8 @@
               </span>
               <h3>Big-screen results</h3>
               <p>
-                Open a read-only display window on the venue TV — boards, bracket, groups, roster, or a scrolling
-                view — and it updates live as scores land.
+                Open a read-only <a href="/features.html#running">display window</a> on the venue TV — boards,
+                bracket, groups, roster, or a scrolling view — and it updates live as scores land.
               </p>
             </article>
 
@@ -369,7 +429,7 @@
         <div class="footer-top">
           <div>
             <a class="rb-logo" href="/" aria-label="RabbidBracket — home">
-              <img class="rb-logo-icon" src="/assets/brand/rabbidbracket-mark.svg" alt="" aria-hidden="true" />
+              <img class="rb-logo-icon" src="/assets/brand/rabbidbracket-mark.svg" alt="" aria-hidden="true" width="160" height="120" />
               <span class="rb-logo-text">
                 <span class="rb-logo-name"><span class="rb-mark-a">Rabbid</span><span class="rb-mark-b">Bracket</span></span>
               </span>
@@ -402,7 +462,7 @@
         <div class="footer-bottom">
           <p class="footer-copy">&copy; <span id="year">2026</span> RabbidBracket</p>
           <a class="rb-attribution" href="https://www.rabbidlabs.com">
-            <img class="rb-attribution-mark" src="/assets/brand/rabbidlabs-mark.svg" alt="" aria-hidden="true" />
+            <img class="rb-attribution-mark" src="/assets/brand/rabbidlabs-mark.svg" alt="" aria-hidden="true" width="1225" height="423" />
             <span class="rb-attribution-text">Powered by RabbidLabs</span>
           </a>
         </div>
