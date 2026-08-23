@@ -74,7 +74,7 @@
       var body = [
         'Name: ' + (data.name || ''),
         'Email: ' + (data.email || ''),
-        'Venue / organisation: ' + (data.venue || '—'),
+        'Venue / organization: ' + (data.venue || '—'),
         'Topic: ' + (data.topic || '—'),
         '',
         data.message || '',

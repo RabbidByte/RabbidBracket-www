@@ -15,7 +15,7 @@
     <title>RabbidBracket — Steel-Tip Dart Tournament Software</title>
     <meta
       name="description"
-      content="RabbidBracket runs steel-tip dart tournaments at your venue — six bracket formats, live board scheduling, exact payouts, and a big-screen TV view."
+      content="RabbidBracket runs steel-tip dart tournaments at your venue — six formats including Dixie Darts, live scheduling, exact payouts, and a big-screen TV view."
     />
     <meta name="theme-color" content="#030710" />
     <link rel="canonical" href="https://www.rabbidbracket.com/" />
@@ -27,26 +27,26 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.rabbidbracket.com/" />
     <meta property="og:site_name" content="RabbidBracket" />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content="en_CA" />
     <meta property="og:title" content="RabbidBracket — Steel-Tip Dart Tournament Software" />
     <meta
       property="og:description"
       content="Configure the format, enter players, auto-generate the bracket, run every board, pay it out — and put a live results screen on the venue TV."
     />
-    <meta property="og:image" content="https://www.rabbidbracket.com/assets/brand/rabbidbracket-icon.png" />
-    <meta property="og:image:secure_url" content="https://www.rabbidbracket.com/assets/brand/rabbidbracket-icon.png" />
+    <meta property="og:image" content="https://www.rabbidbracket.com/assets/img/og-tv-boards.png" />
+    <meta property="og:image:secure_url" content="https://www.rabbidbracket.com/assets/img/og-tv-boards.png" />
     <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="512" />
-    <meta property="og:image:height" content="512" />
-    <meta property="og:image:alt" content="The RabbidBracket match-point mark" />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="The RabbidBracket big-screen view on a venue TV: live board cards, an up-next queue, and live tournament standings." />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="RabbidBracket — Steel-Tip Dart Tournament Software" />
     <meta
       name="twitter:description"
       content="Configure the format, enter players, auto-generate the bracket, run every board, pay it out — and put a live results screen on the venue TV."
     />
-    <meta name="twitter:image" content="https://www.rabbidbracket.com/assets/brand/rabbidbracket-icon.png" />
-    <meta name="twitter:image:alt" content="The RabbidBracket match-point mark" />
+    <meta name="twitter:image" content="https://www.rabbidbracket.com/assets/img/og-tv-boards.png" />
+    <meta name="twitter:image:alt" content="The RabbidBracket big-screen view on a venue TV: live board cards, an up-next queue, and live tournament standings." />
 
     <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/jetbrains-mono-latin-700-normal.woff2" crossorigin />
     <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin-400-normal.woff2" crossorigin />
@@ -73,21 +73,28 @@
             "@id": "https://www.rabbidbracket.com/#website",
             "name": "RabbidBracket",
             "url": "https://www.rabbidbracket.com/",
+            "inLanguage": "en",
             "publisher": { "@id": "https://www.rabbidbracket.com/#organization" }
           },
           {
             "@type": "SoftwareApplication",
             "@id": "https://www.rabbidbracket.com/#software",
             "name": "RabbidBracket",
-            "description": "RabbidBracket runs steel-tip dart tournaments at your venue — six bracket formats, live board scheduling, exact payouts, and a big-screen TV view.",
+            "description": "RabbidBracket runs steel-tip dart tournaments at your venue — six formats including Dixie Darts, live scheduling, exact payouts, and a big-screen TV view.",
             "url": "https://www.rabbidbracket.com/",
             "applicationCategory": "SportsApplication",
+            "screenshot": [
+              "https://www.rabbidbracket.com/assets/img/og-tv-boards.png",
+              "https://www.rabbidbracket.com/assets/img/og-dixie.png"
+            ],
             "featureList": [
+              "Six tournament formats, including the bracket-free Dixie Darts",
               "Automatic brackets with random seeding and byes to the top seeds",
               "Live board scheduling with no double-booked players",
-              "Payouts that reconcile exactly to the prize pool",
+              "Board pins that keep a player on the same board every round",
+              "Payouts by number of entries, dollar amount, or percentage of the prize pool",
               "Big-screen results display for the venue TV",
-              "Spreadsheet, PDF, and PNG exports of standings and brackets",
+              "Spreadsheet, PDF, and PNG exports of standings, brackets, and Dixie points",
               "Score corrections that cascade-reset affected matches"
             ],
             "publisher": { "@id": "https://www.rabbidbracket.com/#organization" }
@@ -121,6 +128,7 @@
         <nav class="nav" id="site-nav" aria-label="Main">
           <a class="nav-link" href="/" aria-current="page">Home</a>
           <a class="nav-link" href="/features.html">Features</a>
+          <a class="nav-link" href="/dixie-darts.html">Dixie Darts</a>
           <a class="nav-link" href="/contact.html">Contact</a>
           <a class="btn btn--primary nav-cta" href="/contact.html">Request a demo</a>
         </nav>
@@ -144,8 +152,8 @@
               <a class="btn btn--ghost btn--lg" href="/contact.html">Talk to us</a>
             </div>
             <p class="hero-note">
-              <a href="/features.html#modes">Six formats</a> · <a href="/features.html#entry">Three entry types</a> ·
-              Live TV display · One-click exports
+              <a href="/features.html#modes">Six formats</a> · <a href="/features.html#entry">Four ways in</a> ·
+              <a href="/dixie-darts.html">Dixie Darts</a> · Live TV display · One-click exports
             </p>
           </div>
 
@@ -210,7 +218,7 @@
               <div class="stat-label">Tournament formats</div>
             </div>
             <div class="stat">
-              <div class="stat-num">3</div>
+              <div class="stat-num">4</div>
               <div class="stat-label">Entry types</div>
             </div>
             <div class="stat">
@@ -244,10 +252,12 @@
                   <path d="M3 5h6l3 4-3 4H3M9 19h6l3-4" /><path d="M18 9h3M18 15h3" />
                 </svg>
               </span>
-              <h3>Automatic brackets</h3>
+              <h3>Automatic draws</h3>
               <p>
-                Pick a <a href="/features.html#modes">format</a> and the draw generates itself — random seeding, byes
-                to the top seeds, and no early rematches between players from the same group.
+                Pick a <a href="/features.html#modes">format</a> and the built-in bracket generator does the rest —
+                random seeding, byes to the top seeds, and no early rematches between players from the same group. Or run
+                <a href="/dixie-darts.html">Dixie Darts</a>, which has no bracket at all and redraws the whole room
+                into fresh teams every round.
               </p>
             </article>
 
@@ -272,8 +282,9 @@
               </span>
               <h3>Payouts that reconcile</h3>
               <p>
-                Set the entry fee and house cut, then pay places by number of entries or by dollar amount. The
-                configuration has to balance to the prize pool exactly, to the cent.
+                Set the entry fee and house cut, then pay places three ways: by number of entries, by dollar amount,
+                or by percentage of the prize pool. Entries and dollars have to balance to the pool exactly, to the
+                cent.
               </p>
             </article>
 
@@ -286,7 +297,7 @@
               <h3>Big-screen results</h3>
               <p>
                 Open a read-only <a href="/features.html#running">display window</a> on the venue TV — boards,
-                bracket, groups, roster, or a scrolling view — and it updates live as scores land.
+                bracket, groups, roster, a scrolling view, or Dixie standings — and it updates live as scores land.
               </p>
             </article>
 
@@ -300,7 +311,7 @@
               <h3>Exports worth sharing</h3>
               <p>
                 Download a spreadsheet backup of the whole event, plus branded PDF and PNG sheets of the summary,
-                standings, and bracket — ready to post the moment the tournament ends.
+                standings, bracket, and Dixie points — ready to post the moment the tournament ends.
               </p>
             </article>
 
@@ -367,44 +378,52 @@
             <h2>Details that matter late in a busy tournament</h2>
           </div>
 
-          <div class="rows">
+          <dl class="rows">
             <div class="row">
-              <div class="row-key">Fair by default</div>
-              <div class="row-val">
+              <dt class="row-key">Fair by default</dt>
+              <dd class="row-val">
                 Seeding is random, byes go to the top seeds, and ranked players are kept apart in group draws and
                 blind-draw pairings. <strong>Ties that decide a paying position are played off</strong> — prize money
                 is never split.
-              </div>
+              </dd>
             </div>
             <div class="row">
-              <div class="row-key">Paper-friendly</div>
-              <div class="row-val">
+              <dt class="row-key">Paper-friendly</dt>
+              <dd class="row-val">
                 Ran the group stage on printed sheets? <strong>Mass score entry</strong> gives you a single grid that
                 mirrors the paper sheet — type the whole stage in, review the totals, and submit once.
-              </div>
+              </dd>
             </div>
             <div class="row">
-              <div class="row-key">Made for the venue</div>
-              <div class="row-val">
+              <dt class="row-key">Nobody has to move</dt>
+              <dd class="row-val">
+                <a href="/dixie-darts.html#pins">Pin a player to a board</a> and every round their match is routed
+                there — for anyone who shouldn't have to walk between boards, or when only one board in the venue is
+                the accessible one. The board is held for them, and the screen says so.
+              </dd>
+            </div>
+            <div class="row">
+              <dt class="row-key">Made for the venue</dt>
+              <dd class="row-val">
                 Scoring is <strong>outcome-based</strong> — record who won each leg, not every dart. Boards are
                 assigned automatically, and the display window is sized for the TV over the bar.
-              </div>
+              </dd>
             </div>
             <div class="row">
-              <div class="row-key">Yours to brand</div>
-              <div class="row-val">
+              <dt class="row-key">Yours to brand</dt>
+              <dd class="row-val">
                 Twelve colour themes ship in the box, from the default dark terminal look to high-contrast light
                 schemes. Add <strong>your own logo</strong> and it rides along on the exported sheets.
-              </div>
+              </dd>
             </div>
             <div class="row">
-              <div class="row-key">Nothing to lose</div>
-              <div class="row-val">
+              <dt class="row-key">Nothing to lose</dt>
+              <dd class="row-val">
                 Every tournament is stored and resumable — a power blip or a closed browser tab doesn't cost you the
                 event. Finished tournaments stay in <strong>History</strong>.
-              </div>
+              </dd>
             </div>
-          </div>
+          </dl>
         </div>
       </section>
     </main>
@@ -453,6 +472,7 @@
             <h2>Explore</h2>
             <ul class="footer-links">
               <li><a href="/features.html#modes">Tournament modes</a></li>
+              <li><a href="/dixie-darts.html">Dixie Darts</a></li>
               <li><a href="/features.html#entry">Entry types</a></li>
               <li><a href="/features.html#running">Running an event</a></li>
             </ul>

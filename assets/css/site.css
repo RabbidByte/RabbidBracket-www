@@ -92,12 +92,12 @@
   /* Not a RabbidLabs value: the RabbidBracket product mark's own gradient,
      matching the stops in brand/rabbidbracket-mark.svg. Kept literal so the
      mark and the type it tints can never drift apart. */
-  --grad: linear-gradient(115deg, #5956f6, #3199e8 55%, #24d29a);
+  --grad: linear-gradient(90deg, #5956f6, #3199e8 55%, #24d29a);
 
   /* The brand has no danger role; these are local to the form's error state. */
   --danger: #ff8189;
-  --danger-bg: color-mix(in srgb, #e63946 10%, transparent);
-  --danger-border: color-mix(in srgb, #e63946 30%, transparent);
+  --danger-bg: color-mix(in srgb, var(--danger) 10%, transparent);
+  --danger-border: color-mix(in srgb, var(--danger) 30%, transparent);
 
   /* Ink for text sitting on a filled accent — not a brand colour. */
   --on-accent: #fff;
@@ -105,7 +105,6 @@
 
   --radius: var(--rb-radius);
   --radius-sm: var(--rb-radius-sm);
-  --radius-lg: 12px; /* local: the brand's terminal shape language stops at 6px */
 
   --mono: var(--rb-font-mono);
   --sans: var(--rb-font-sans);
@@ -257,7 +256,7 @@ body::before {
 }
 
 .eyebrow::before {
-  content: '> ';
+  content: '// ';
   color: var(--win);
 }
 
@@ -292,6 +291,11 @@ h3 {
 
 .section-head--center .lede {
   margin-inline: auto;
+}
+
+/* A closing note set after a figure or list, not under a heading. */
+.lede--flow {
+  margin-top: 1.6rem;
 }
 
 .lede--center {
@@ -706,7 +710,7 @@ h3 {
 .mock {
   background: linear-gradient(160deg, var(--surface), color-mix(in srgb, var(--surface) 65%, var(--bg)));
   border: 1px solid var(--border-2);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius);
   box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
@@ -904,7 +908,7 @@ h3 {
 .card {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius);
   padding: 1.5rem 1.4rem;
   display: flex;
   flex-direction: column;
@@ -966,7 +970,7 @@ h3 {
   gap: 1px;
   background: var(--border);
   border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius);
   overflow: hidden;
 }
 
@@ -1021,7 +1025,7 @@ h3 {
 .mode {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius);
   padding: 1.6rem 1.5rem;
   display: flex;
   flex-direction: column;
@@ -1105,7 +1109,7 @@ h3 {
 }
 
 .mode-facts li::before {
-  content: '>';
+  content: '→';
   position: absolute;
   left: 0;
   top: 0;
@@ -1119,7 +1123,7 @@ h3 {
   display: flex;
   flex-direction: column;
   border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius);
   overflow: hidden;
   background: var(--surface);
 }
@@ -1164,6 +1168,11 @@ h3 {
   font-weight: 600;
 }
 
+/* A row long enough to need two paragraphs (the payout rules). */
+.row-val p + p {
+  margin-top: 0.75rem;
+}
+
 /* ── CTA band ── */
 .cta-band {
   position: relative;
@@ -1202,7 +1211,7 @@ h3 {
 .form-card {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius);
   padding: clamp(1.4rem, 3vw, 2rem);
 }
 
@@ -1325,7 +1334,7 @@ h3 {
 .aside-card {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius);
   padding: 1.5rem 1.4rem;
   display: flex;
   flex-direction: column;
@@ -1438,6 +1447,61 @@ h3 {
   font-size: 0.65rem;
   letter-spacing: 0.1em;
   color: var(--text-dim);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   SCREENSHOTS — app captures shown inside a bordered frame
+
+   The captures come from the app running its default scheme id 0 ("Rabbid"),
+   which matches this palette value-for-value, so the frame reads as part of
+   the page rather than a pasted-in image.
+   ═══════════════════════════════════════════════════════════════════════════ */
+.shot {
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Sits under the frame, not inside it — the captures already have their own
+   dark ground and a caption band over them would fight it. */
+.shot-cap {
+  border-top: 1px solid var(--border);
+  padding: 0.7rem 0.95rem;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  line-height: 1.55;
+  letter-spacing: 0.02em;
+  color: var(--text-dim);
+}
+
+.shot-cap::before {
+  content: '// ';
+  color: var(--win);
+}
+
+/* A capture that follows prose inside a section. */
+.shot--flow {
+  margin-top: 1.6rem;
+}
+
+/* Two captures side by side (operator + TV of the same moment). */
+.shot-pair {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+  gap: 1.1rem;
+  margin-top: 1.6rem;
+}
+
+.shot-pair .shot {
+  margin: 0;
 }
 
 /* ═══════════════════════════════════════════════════════════════════════════
